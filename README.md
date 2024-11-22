@@ -46,7 +46,7 @@ This project builds upon time-domain features extracted from the **Activity Reco
    - Repeat scatterplots for the expanded features and compare with the original.
 
 3. **Segmentation and Feature Selection**:
-   - Segment time series into \( l \in \{1, 2, ..., 20\} \) equal-length segments.
+   - Segment time series into equal-length segments.
    - Perform logistic regression to solve the binary classification problem.
    - Use:
      - **p-values** from logistic regression coefficients.
@@ -68,8 +68,8 @@ This project builds upon time-domain features extracted from the **Activity Reco
 1. **Regularization**:
    - Repeat segmentation experiments from the previous section using **L1-penalized logistic regression**.
    - Perform cross-validation for:
-     - \( l \): Number of time series segments.
-     - \( \lambda \): Regularization penalty weight.
+     -  Number of time series segments.
+     -  Regularization penalty weight.
 
 2. **Comparison**:
    - Compare L1-penalized logistic regression with feature selection using p-values.
